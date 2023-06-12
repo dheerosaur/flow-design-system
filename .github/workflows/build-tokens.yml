@@ -3,6 +3,7 @@ run-name: Build tokens for Flow Design System
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - src/tokens/figma/*
   workflow_dispatch: {}
@@ -21,6 +22,7 @@ jobs:
       - run: |
           yarn
           yarn run build-design-tokens
+      - run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "dheerosaur@gmail.com"
           git add src
