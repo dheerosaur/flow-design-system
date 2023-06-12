@@ -1,0 +1,19 @@
+{
+  "name": "flow-design-system",
+  "version": "0.0.0",
+  "description": "Flow Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dheerosaur/flow-design-system.git"
+  },
+  "author": "Dheeraj Sayala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dheerosaur/flow-design-system/issues"
+  },
+  "homepage": "https://github.com/dheerosaur/flow-design-system#readme"
+}
