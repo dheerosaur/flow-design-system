@@ -1,0 +1,24 @@
+{
+  "button": {
+    "spacing": {
+      "horizontal": {
+        "value": "{form.spacing.horizontal}",
+        "type": "spacing"
+      }
+    },
+    "font": {
+      "size": {
+        "value": "{font.size.900}",
+        "type": "fontSizes"
+      }
+    }
+  },
+  "input": {
+    "spacing": {
+      "horizontal": {
+        "value": "{form.spacing.horizontal}",
+        "type": "spacing"
+      }
+    }
+  }
+}

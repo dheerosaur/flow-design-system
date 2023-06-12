@@ -4,7 +4,7 @@
   "description": "Flow Design System",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "build-design-tokens": "style-dictionary build --config ./style-dictionary.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/dheerosaur/flow-design-system/issues"
   },
-  "homepage": "https://github.com/dheerosaur/flow-design-system#readme"
+  "homepage": "https://github.com/dheerosaur/flow-design-system#readme",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "0.9.7",
+    "style-dictionary": "3.8.0"
+  }
 }
