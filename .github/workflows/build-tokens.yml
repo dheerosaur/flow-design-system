@@ -2,7 +2,7 @@ name: build-tokens
 run-name: Build tokens for Flow Design System
 
 on:
-  push:
+  pull_request:
     paths:
       - tokens/**
   workflow_dispatch: {}
