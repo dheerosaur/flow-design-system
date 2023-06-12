@@ -4,7 +4,7 @@ run-name: Build tokens for Flow Design System
 on:
   pull_request:
     paths:
-      - tokens/**
+      - src/tokens/figma/*
   workflow_dispatch: {}
 
 jobs:
