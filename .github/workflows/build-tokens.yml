@@ -18,9 +18,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - run: npm install
       - run: |
-          npm run build-design-tokens
+          yarn
+          yarn run build-design-tokens
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "dheerosaur@gmail.com"
           git add src
