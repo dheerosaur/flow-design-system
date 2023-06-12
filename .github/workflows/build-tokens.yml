@@ -2,10 +2,11 @@ name: build-tokens
 run-name: Build tokens for Flow Design System
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+  push:
     paths:
-      - src/tokens/figma/*
+      - src/figma/*
+    branches-ignore:
+      - main
   workflow_dispatch: {}
 
 jobs:
