@@ -1,0 +1,28 @@
+name: build-tokens
+run-name: Build tokens for Flow Design System
+
+on:
+  pull_request:
+    paths:
+      - tokens/**
+  workflow_dispatch: {}
+
+jobs:
+  build-design-tokens:
+    runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_AUTHOR: Dheeraj Sayala
+      CI_COMMIT_MESSAGE: building design tokens
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - run: npm install
+      - run: |
+          npm run build-design-tokens
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "dheerosaur@gmail.com"
+          git add src
+          git diff --name-only src/tokens.json || git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push

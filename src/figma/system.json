@@ -1,0 +1,10 @@
+{
+  "form": {
+    "spacing": {
+      "horizontal": {
+        "value": "{space.size.400}",
+        "type": "spacing"
+      }
+    }
+  }
+}
