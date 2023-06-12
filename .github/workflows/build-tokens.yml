@@ -20,12 +20,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - run: |
+      - name: Install dependencies, build tokens
+        run: |
           yarn
           yarn run build-design-tokens
-      - run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "dheerosaur@gmail.com"
-          git add src
-          git diff --name-only src/tokens.json || git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+      - name: Commit and push
+        run: |
+          git config user.email "dheerosaur@gmail.com"
+          git config user.name "Dheeraj Sayala"
+          git commit -am "${{ env.CI_COMMIT_MESSAGE }}"
           git push

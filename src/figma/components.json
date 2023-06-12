@@ -8,7 +8,7 @@
     },
     "font": {
       "size": {
-        "value": "{font.size.800}",
+        "value": "{font.size.700}",
         "type": "fontSizes"
       }
     }
