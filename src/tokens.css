@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 12 Jun 2023 18:24:10 GMT
+ * Generated on Mon, 12 Jun 2023 20:14:46 GMT
  */
 
 :root {
@@ -102,7 +102,7 @@
   --form-spacing-horizontal: var(--space-size-400);
   --type-display-legal: var(--font-weight-normal) 0.813rem/var(--font-line-height-normal) 'var(--font-family)';
   --type-display-normal: var(--font-weight-normal) var(--font-size-3var(--font-letter-spacing-normal)0)/var(--font-line-height-normal) 'var(--font-family)';
-  --button-font-size: 3.563rem;
+  --button-font-size: var(--font-size-700);
   --input-spacing-horizontal: var(--form-spacing-horizontal);
   --button-spacing-horizontal: var(--form-spacing-horizontal);
 }
